@@ -1,0 +1,18 @@
+.input-container {
+    display: flex;
+}
+
+.label {
+    width: 100px;
+}
+
+.field {
+    flex: 1;
+}
+
+.view-user {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

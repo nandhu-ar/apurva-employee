@@ -1,0 +1,27 @@
+<div class="add-edit-user">
+    <div class="input-container">
+        <div class="label">Name: </div>
+        <div class="field">
+            <input type="text" [(ngModel)]="employee.name"/>
+        </div>
+    </div>
+    <div class="input-container">
+        <div class="label">Address: </div>
+        <div class="field">
+            <input type="text" [(ngModel)]="employee.address"/>
+        </div>
+    </div>
+    <div class="input-container">
+        <div class="label">Mobile: </div>
+        <div class="field">
+            <input type="number" [(ngModel)]="employee.mobile"/>
+        </div>
+    </div>
+    <div class="input-container">
+        <div class="label">Salary: </div>
+        <div class="field">
+            <input type="number" [(ngModel)]="employee.salary" />
+        </div>
+    </div>
+    <input type="button" class="submit" value="submit" (click)="onSubmit()"/> 
+</div>

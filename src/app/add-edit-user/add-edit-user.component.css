@@ -1,0 +1,22 @@
+.input-container {
+    display: flex;
+}
+
+.label {
+    width: 100px;
+}
+
+.field {
+    flex: 1;
+}
+
+.add-edit-user {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.submit {
+    max-width: 80px;
+}

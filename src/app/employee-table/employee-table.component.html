@@ -1,0 +1,29 @@
+<div class="table-container">
+<div class="search"><input type="text" [(ngModel)]="searchText"placeholder="Search By Name"> 
+    <input type="button" value="search" (click)="search()"> 
+    <input type="button" value="reset" (click)="resetEmployees()">
+</div>
+<div class="table-header" > <input type="button" value="Add Employee" (click)="onAddUser()"></div>
+<table class="employee-table">
+    <thead>
+        <th class="t-1">Name</th>
+        <th class="t-1">Address</th>
+        <th class="t-1">Mobile</th>
+        <th class="t-1">Salary</th>
+        <th class="t-3">View</th>
+        <th class="t-3">Edit</th>
+        <th class="t-3">Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employees">
+            <td class="t-1">{{emp.name}}</td>
+            <td class="t-1">{{emp.address}}</td>
+            <td class="t-1">{{emp.mobile}}</td>
+            <td class="t-1">{{emp.salary}}</td>
+            <td class="t-3" (click)="onViewUser(emp.employeeId)">view</td>
+            <td class="t-3" (click)="onEditEmployee(emp.employeeId)">edit</td>
+            <td class="t-3" (click)="onDeleteEmployee(emp.employeeId)">delete</td>
+        </tr>
+    </tbody>
+</table>
+</div>
